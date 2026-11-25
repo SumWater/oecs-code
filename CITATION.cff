@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite the manuscript."
+type: article
+title: "When Failure Memories Help or Hurt: Conservative Selection for Tool-Using LLM Agents"
+authors:
+  - family-names: Peng
+    given-names: Kai
+  - family-names: Zhang
+    given-names: Linglong
+  - family-names: Wang
+    given-names: Xiaofen
+  - family-names: Zhang
+    given-names: Ke
+    email: kezhang@uestc.edu.cn

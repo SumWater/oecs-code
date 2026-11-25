@@ -1,0 +1,239 @@
+{
+  "applicable_selection_by_stratum": {
+    "dense": {
+      "argument_omission": {
+        "applicable": 99,
+        "total": 189
+      },
+      "timeout": {
+        "applicable": 177,
+        "total": 177
+      },
+      "transient_authorization": {
+        "applicable": 107,
+        "total": 175
+      }
+    },
+    "llm_judge": {
+      "argument_omission": {
+        "applicable": 74,
+        "total": 189
+      },
+      "timeout": {
+        "applicable": 168,
+        "total": 177
+      },
+      "transient_authorization": {
+        "applicable": 98,
+        "total": 175
+      }
+    },
+    "oracle": {
+      "argument_omission": {
+        "applicable": 189,
+        "total": 189
+      },
+      "timeout": {
+        "applicable": 177,
+        "total": 177
+      },
+      "transient_authorization": {
+        "applicable": 175,
+        "total": 175
+      }
+    },
+    "proper": {
+      "argument_omission": {
+        "applicable": 179,
+        "total": 189
+      },
+      "timeout": {
+        "applicable": 174,
+        "total": 177
+      },
+      "transient_authorization": {
+        "applicable": 160,
+        "total": 175
+      }
+    },
+    "proper_no_contradiction": {
+      "argument_omission": {
+        "applicable": 179,
+        "total": 189
+      },
+      "timeout": {
+        "applicable": 177,
+        "total": 177
+      },
+      "transient_authorization": {
+        "applicable": 175,
+        "total": 175
+      }
+    },
+    "proper_no_gate": {
+      "argument_omission": {
+        "applicable": 179,
+        "total": 189
+      },
+      "timeout": {
+        "applicable": 142,
+        "total": 177
+      },
+      "transient_authorization": {
+        "applicable": 117,
+        "total": 175
+      }
+    },
+    "tfidf": {
+      "argument_omission": {
+        "applicable": 59,
+        "total": 189
+      },
+      "timeout": {
+        "applicable": 167,
+        "total": 177
+      },
+      "transient_authorization": {
+        "applicable": 122,
+        "total": 175
+      }
+    }
+  },
+  "applicable_selection_counts": {
+    "dense": 383,
+    "llm_judge": 340,
+    "oracle": 541,
+    "proper": 513,
+    "proper_no_contradiction": 531,
+    "proper_no_gate": 438,
+    "tfidf": 348
+  },
+  "changed_by_stratum": {
+    "dense": {
+      "argument_omission": 98,
+      "timeout": 71,
+      "transient_authorization": 81
+    },
+    "llm_judge": {
+      "argument_omission": 79,
+      "timeout": 68,
+      "transient_authorization": 97
+    },
+    "proper": {
+      "argument_omission": 120,
+      "timeout": 32,
+      "transient_authorization": 53
+    },
+    "proper_no_contradiction": {
+      "argument_omission": 120,
+      "timeout": 46,
+      "transient_authorization": 75
+    },
+    "proper_no_gate": {
+      "argument_omission": 130,
+      "timeout": 66,
+      "transient_authorization": 104
+    }
+  },
+  "changed_counts": {
+    "dense": 250,
+    "llm_judge": 244,
+    "proper": 205,
+    "proper_no_contradiction": 241,
+    "proper_no_gate": 300
+  },
+  "changed_set_overlaps": {
+    "dense_and_llm_judge": 180,
+    "dense_and_proper": 146,
+    "dense_and_proper_no_contradiction": 174,
+    "dense_and_proper_no_gate": 187,
+    "llm_judge_and_proper": 120,
+    "llm_judge_and_proper_no_contradiction": 148,
+    "llm_judge_and_proper_no_gate": 166,
+    "proper_and_proper_no_contradiction": 205,
+    "proper_and_proper_no_gate": 205,
+    "proper_no_gate_and_proper_no_contradiction": 221
+  },
+  "changed_target_union_by_stratum": {
+    "argument_omission": 152,
+    "timeout": 105,
+    "transient_authorization": 146
+  },
+  "changed_target_union_count": 403,
+  "corrections_vs_tfidf": {
+    "dense": 79,
+    "llm_judge": 68,
+    "proper": 165,
+    "proper_no_contradiction": 183,
+    "proper_no_gate": 165
+  },
+  "judge_candidate_position_counts": {
+    "C01": 297,
+    "C02": 96,
+    "C03": 49,
+    "C04": 19,
+    "C05": 25,
+    "C06": 11,
+    "C07": 10,
+    "C08": 16,
+    "C09": 16,
+    "C10": 2
+  },
+  "new_errors_vs_tfidf": {
+    "dense": 44,
+    "llm_judge": 76,
+    "proper": 0,
+    "proper_no_contradiction": 0,
+    "proper_no_gate": 75
+  },
+  "planned_agent_workload_before_historical_cache_join": {
+    "agent_models": 2,
+    "historical_qwen_cache_join_pending": true,
+    "logical_condition_rows_all_targets": 8656,
+    "logical_conditions": 8,
+    "unique_prompts_per_model_all_targets": 1715,
+    "unique_prompts_per_model_union_only": 1439,
+    "unique_prompts_two_models_all_targets": 3430,
+    "unique_prompts_two_models_union_only": 2878
+  },
+  "schema_version": 1,
+  "selection_concentration": {
+    "dense": {
+      "maximum_single_memory_count": 36,
+      "maximum_single_memory_share": 0.066543438077634,
+      "unique_selected_memories": 85
+    },
+    "llm_judge": {
+      "maximum_single_memory_count": 23,
+      "maximum_single_memory_share": 0.04251386321626617,
+      "unique_selected_memories": 85
+    },
+    "oracle": {
+      "maximum_single_memory_count": 39,
+      "maximum_single_memory_share": 0.07208872458410351,
+      "unique_selected_memories": 61
+    },
+    "proper": {
+      "maximum_single_memory_count": 34,
+      "maximum_single_memory_share": 0.06284658040665435,
+      "unique_selected_memories": 64
+    },
+    "proper_no_contradiction": {
+      "maximum_single_memory_count": 29,
+      "maximum_single_memory_share": 0.053604436229205174,
+      "unique_selected_memories": 53
+    },
+    "proper_no_gate": {
+      "maximum_single_memory_count": 37,
+      "maximum_single_memory_share": 0.06839186691312385,
+      "unique_selected_memories": 69
+    },
+    "tfidf": {
+      "maximum_single_memory_count": 22,
+      "maximum_single_memory_share": 0.04066543438077634,
+      "unique_selected_memories": 75
+    }
+  },
+  "stage_id": "e1_selection",
+  "target_count": 541
+}

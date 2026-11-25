@@ -1,0 +1,42 @@
+{
+  "frozen_checks": {
+    "evaluation_result_lock": {
+      "source": "configs/paper_2026/agent_evaluation_v1_0.result.lock.json",
+      "expected": "8d0fe413f0ec6f2757585dedfdb5ed8260d4cc7556b0c3cdff8adf3554cc9dcb",
+      "actual": "8d0fe413f0ec6f2757585dedfdb5ed8260d4cc7556b0c3cdff8adf3554cc9dcb",
+      "match": true
+    },
+    "evaluation_results": {
+      "source": "outputs/paper_2026/e2_e3_agent_evaluation/results.json",
+      "expected": "e44a7743af57787c992039e46599df090ef1f4d24a983e6d03f3c0a4a82f6c86",
+      "actual": "e44a7743af57787c992039e46599df090ef1f4d24a983e6d03f3c0a4a82f6c86",
+      "match": true
+    },
+    "statistics_source": {
+      "source": "src/failure_memory/paper_2026/statistics.py",
+      "expected": "3723f723544c5142ba2f6f2f49e294e38452de14c6b77eb62c00a8dcccc22730",
+      "actual": "3723f723544c5142ba2f6f2f49e294e38452de14c6b77eb62c00a8dcccc22730",
+      "match": true
+    }
+  },
+  "runner": {
+    "source": "experiments/paper_2026/analyze_e2_e3.py",
+    "sha256": "f5d91416f0fa6204d5e65dbf6a60266fabbd83c67f8dc0bcacc516470657398b"
+  },
+  "extraction": {
+    "rows": 8656,
+    "fields": [
+      "target_key",
+      "instance_id",
+      "model_name",
+      "condition",
+      "stratum",
+      "changed_target_union_member",
+      "outcome",
+      "parse_valid"
+    ],
+    "filter": "none; original ordering retained",
+    "source_sha256": "e44a7743af57787c992039e46599df090ef1f4d24a983e6d03f3c0a4a82f6c86"
+  },
+  "export_changes": "Formal analysis runner import yaml changed to json for import only; use verify_results.py. Config converted to JSON and results path adjusted. All statistical and selector logic unchanged."
+}

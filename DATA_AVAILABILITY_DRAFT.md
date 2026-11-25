@@ -1,0 +1,3 @@
+# Draft Data Availability Statement (pre-release)
+
+The analysis code and reduced, target-level evaluation records supporting the reported paired comparisons are prepared for release in a reproducibility package, subject to the authors' review of licensing, privacy, and third-party data rights. The underlying benchmark is ToolMisuseBench (v0.2_large); it should be obtained from its official provider under its applicable terms. The package does not currently contain the benchmark texts, the complete memory bank, or all artifacts required to rerun model inference. Repository location and availability will be specified after publication, if release is approved.

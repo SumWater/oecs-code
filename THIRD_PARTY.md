@@ -1,0 +1,3 @@
+# Third-party material and rights
+
+ToolMisuseBench code in the local checkout carries an MIT license, copyright 2026. No benchmark code or dataset text is included in this package. The dataset license and rights to redistribute derived memory text were not established from local evidence; obtain the dataset from its official source and confirm its terms before use or redistribution. Model weights are not included; check the respective model terms. No project-wide license was found that can be confidently applied to OECS; authors must select and add one before public release. This document is not a grant of rights.
