@@ -1,3 +1,5 @@
 # Third-party material and rights
 
-ToolMisuseBench code in the local checkout carries an MIT license, copyright 2026. No benchmark code or dataset text is included in this package. The dataset license and rights to redistribute derived memory text were not established from local evidence; obtain the dataset from its official source and confirm its terms before use or redistribution. Model weights are not included; check the respective model terms. No project-wide license was found that can be confidently applied to OECS; authors must select and add one before public release. This document is not a grant of rights.
+ToolMisuseBench Python source under `external/toolmisusebench/toolmisusebench/` is included with its MIT license at `external/toolmisusebench/LICENSE`. The dataset and natural memory texts are not distributed. Dataset and derived-data redistribution terms remain to be confirmed; obtain the pinned dataset from its official provider and review its terms. Model weights are not included.
+
+The upstream project's `pyproject.toml` contains an MIT license metadata field, but there is no confirmed project-level license file or explicit authorization to apply it to this export. The authors should confirm the intended OECS license. This file is not a grant of rights.

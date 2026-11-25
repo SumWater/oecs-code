@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "status": "frozen_after_preparation_before_native_authz_model_outputs",
+  "config": {
+    "path": "configs/confirmatory_transient_authz_v1.yaml",
+    "sha256": "e7f382e4c2bd70f9ace5695ff8b31becabeba5023777f1286071bc3a94751e00"
+  },
+  "runner": {
+    "path": "experiments/confirmatory_transient_authz_v1.py",
+    "sha256": "5f5893555246b65f8eeab81175787b1cc93f630cfa1cc175752456173773c67b"
+  },
+  "selector": {
+    "path": "src/failure_memory/transient_authz_gate.py",
+    "sha256": "32a21b6e594bfebbb5e4bfcff1a570cf6f32470bbc49d81abb0e25970e16cd47"
+  },
+  "result_schema": {
+    "path": "schemas/confirmatory_transient_authz_v1.schema.json",
+    "sha256": "61022dc86cc6aad3f61cfa410d3f7a735e575b081a121c1bc0a83eafcc4dfb46"
+  },
+  "preregistration": {
+    "path": "docs/preregistration_confirmatory_transient_authz_v1.md",
+    "sha256": "6f7f79b005a1ae71f5b1b3af130f7b11730406bdebcbe2e469927a36efcba8bb"
+  },
+  "capacity_result_lock": {
+    "path": "configs/transient_authz_capacity_v1.result.lock.json",
+    "sha256": "ffad78b5928c0c184e7eb08243efa715e5d065ebd141f23d285a5e79abd0b4ba"
+  },
+  "capacity_screening": {
+    "path": "outputs/transient_authz_capacity_v1/screening.json",
+    "sha256": "a2e264dac63b2d9162c6dc9d5af7bc3a3b809f03303a4de5e047e87f8316540e"
+  },
+  "environment_lock": {
+    "path": "configs/confirmatory_transient_authz_v1.environment.lock.json",
+    "sha256": "b06394e92c8e84b7221d14d6fc5e4b45083102e9c73ba58b39d3bf544615c0e1"
+  },
+  "preparation_lock": {
+    "path": "configs/confirmatory_transient_authz_v1.prepared.lock.json",
+    "sha256": "2a7681d1d3e12ec4d10117a0153002a5aaa8e3763ac7e2908f5f0be463376355"
+  },
+  "preparation_report": {
+    "path": "docs/confirmatory_transient_authz_v1_preparation.md",
+    "sha256": "18d0ab0d460df1c5b17e28e9cb9f62f3274d8583d017a75524aae8b4496eafdc"
+  },
+  "run_script": {
+    "path": "scripts/run_confirmatory_transient_authz_v1_lab.sh",
+    "sha256": "95fab88ba418e836bc8cd52f199a74ac4b7e79218975fb896fbd139c4e24e9ac"
+  },
+  "frozen_primary_pair_count": 53,
+  "frozen_all_target_count": 175,
+  "frozen_model_call_count": 228,
+  "frozen_global_distinct_prompt_count": 213,
+  "preparation_revision": {
+    "date": "2026-07-23",
+    "reason": "separate per-target model calls from globally distinct prompt texts",
+    "model_outputs_existed": false
+  },
+  "persistent_authorization_excluded": true,
+  "model_outputs_generated": false,
+  "gpu_run_authorized": true
+}

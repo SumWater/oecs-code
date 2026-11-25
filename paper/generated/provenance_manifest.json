@@ -1,0 +1,14 @@
+{
+  "sources": [
+    {
+      "name": "e2e3_tables",
+      "path": "outputs/paper_2026/e2_e3_formal_analysis/tables.json",
+      "sha256": "b14119e7eee348c085cb6bcbefca9e8a2ab2db8c4e283265799680acc232bf35"
+    },
+    {
+      "name": "e4_diagnostics",
+      "path": "outputs/paper_2026/e4_diagnostics/diagnostics.json",
+      "sha256": "b74f355fff9cef82c257fe7ef2d887017526e3093122dc0d2de555a5734991d4"
+    }
+  ]
+}

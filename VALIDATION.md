@@ -2,24 +2,16 @@
 
 ## Passed
 
-- Frozen E2/E3 evaluation results, evaluation lock, statistics source and analysis runner matched their pre-existing configuration SHA-256 values before extraction. E1 analysis, E4 diagnostics, E5 concentration matched their respective result locks. The exact comparisons and original hashes are recorded in `provenance/source_hashes.json` for E2/E3.
-- Export retained all 8,656 input records, in source order, with only documented fields and no row filter. Exact equality of every recalculated E2/E3 descriptive and inference row with frozen `tables.json` verifies the numerical effects of this extraction.
-- A fresh directory outside the project was used to run `check_selector.py` and `verify_results.py` with bundled Python and no project path. Both passed. This import check is not a behavioral test of OECS.
-- Primary 403: Qwen TF-IDF 351, OECS 366, discordance 15/0, +3.7221 pp; Mistral 158, 180, 30/8, +5.4591 pp. OECS versus No Memory is +24.3176 pp Qwen and −3.7221 pp Mistral.
-- All 541: Qwen 469 versus 484, 15/0, +2.7726 pp; Mistral 226 versus 248, 30/8, +4.0665 pp. All 18 inferential rows including 10,000-replicate paired percentile bootstrap intervals, exact two-sided McNemar p values and within-family Holm adjusted p values matched frozen tables.
-- Automated scan found no common private-key blocks, common API-token patterns, obvious private home paths, or sensitive configuration filenames. Excluded raw chat, audit participant records, model weights, caches and model output text. This is a bounded scan, not proof of absence of all sensitive content.
+- Original E2/E3 evaluation data, evaluation lock, analysis runner and statistics source matched their frozen SHA256 identities before extraction; E1, E4 and E5 summaries matched their result locks. The reduced 8,656 records retain all rows in source order.
+- In a fresh directory, `verify_results.py` reproduced every frozen E2/E3 table row including 18 comparisons, exact two-sided McNemar tests, 10,000 paired bootstrap replicates and Holm adjustments. Primary Qwen: 366 vs 351, 15/0, +3.7221 pp; Mistral: 180 vs 158, 30/8, +5.4591 pp. On all 541 targets, the respective differences are +2.7726 and +4.0665 pp. OECS versus No Memory is +24.3176 pp and −3.7221 pp, respectively.
+- Original typed selection inputs were reconstructed locally. The original E1 preparation verified 60 of 61 P0 source hashes; `docs/paper_2026/experiment_plan.md` did not match its frozen hash. For this reconstruction only, that documentation mismatch was explicitly waived; the remaining source checks and full comparison with the frozen selector audit remained active. No original files were modified.
+- Before export, removing the instruction and raw argument values and replacing natural memory text preserved all 1,623 complete decisions across 541 targets and three variants. In a new directory, `verify_selector.py` matched those decisions and rebuilt the changed-target union as 403/541 from frozen selection identities. This does not regenerate TF-IDF ranks.
+- In a fresh directory with the original frozen development file, `rebuild_memory.py` recreated the 100 source identities and natural-text hashes. Third-party data and rebuilt texts are not included. PyYAML from the locally bundled development environment was used; installation and data download were not tested.
+- `generate_formal_figures.py` generated five SVGs from hash-verified frozen tables and diagnostics. These SVG hashes differ from the archived project SVGs; exact figure reproduction, visual equivalence and PDF/PNG conversion are not verified.
+- An automated scan found no common private-key blocks, API-token patterns, private home paths or sensitive configuration filenames. The only email-shaped string was the corresponding author's email in CITATION.cff. This bounded scan is not proof of absence of all sensitive content.
 
-## Not tested
+## Not tested or unresolved
 
-- Selector decisions against all original candidates; original target-to-memory selections and the changed-union construction.
-- Recalculation of E1 applicability, E4 diagnostics, E5 concentration, blind-audit findings, or figures. The corresponding retained aggregate files are reference outputs only.
-- Full inference, environment setup, original model hashes, GPU operation, and the original generation pipeline. No model, remote service, or GPU was used.
-
-## Blocked / author review before release
-
-- Dataset licensing and permission to redistribute derived 100-memory texts are unconfirmed. The frozen memory bank, its complete construction dependencies, local benchmark extensions, original selection inputs, model outputs and exact complete rerun environment are not packaged. The A workflow verifies E2/E3 statistics, not all figures and results in the paper; B is not runnable from this export.
-- Authors must select a project license, review third-party/model terms and permissions, and inspect the package for private or sensitive information. The paper Data Availability Statement remains a draft and must be updated only when the actual release status is known.
-
-## Experiment-code export follow-up
-
-The source tree and additional experiment entry points were added for code sharing. The selector import and E2/E3 statistics checks passed again in a fresh external directory. The extra entry points have not been executed or verified for complete dependencies; full experiments remain untested. A common credential and private-path pattern scan found no matches.
+- TF-IDF retrieval from raw targets, full E1 finalization, independent E1 applicability, E4/E5 calculations, blind-audit results, raw-generation trace reconstruction, end-to-end cohort reconstruction, model setup or inference. No model, remote service or GPU was used.
+- Full experiment scripts need more input artifacts and environment dependencies. Some configuration copies have machine paths removed or modified line endings; frozen source hashes can fail.
+- Dataset and derived text redistribution rights and the OECS license require author confirmation. The original project metadata says MIT but no project-level license file was found. ToolMisuseBench code retains its own MIT license.

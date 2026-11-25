@@ -1,0 +1,19 @@
+{
+  "note": "Host-specific path lines omitted; these copies do not retain original frozen-byte hashes. See original locked hashes in analysis provenance. Do not treat copies as byte-identical locks.",
+  "files": [
+    "configs/paper_2026/agent_generation_v1_0.yaml",
+    "configs/paper_2026/dense_retrieval_v0_1.yaml",
+    "configs/paper_2026/dual_agent_runtime_v0_1.lock.json",
+    "configs/paper_2026/e1_dense_execution_v1_0.yaml",
+    "configs/paper_2026/e1_llm_judge_execution_v1_0.yaml",
+    "configs/paper_2026/environment_selection_v0_1.yaml",
+    "configs/paper_2026/llm_judge_v0_1.result.lock.json",
+    "configs/paper_2026/llm_judge_v0_1.yaml",
+    "configs/paper_2026/model_b_candidate_v0_1.yaml",
+    "configs/paper_2026/model_b_manifest_v0_1.lock.json",
+    "configs/proper_v2/toolsandbox_model_pilot_preparation_v2_1.yaml",
+    "configs/proper_v2/toolsandbox_qwen_continuation_development_v2_2_1.yaml",
+    "configs/proper_v2/toolsandbox_qwen_lifecycle_development_v2_2.yaml",
+    "configs/proper_v2/toolsandbox_qwen_pilot_v2_1.yaml"
+  ]
+}

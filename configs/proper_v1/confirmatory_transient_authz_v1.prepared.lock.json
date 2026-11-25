@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "status": "pass_deterministic_preparation_before_model_outputs",
+  "prepared_manifest": {
+    "path": "work/confirmatory_transient_authz_v1_prepared.json",
+    "sha256": "1a8a72b9554ceceaaa041fde04dacabe1966aa31b80f5ca47bf70570022ba806"
+  },
+  "screening": {
+    "path": "outputs/confirmatory_transient_authz_v1/screening.json",
+    "sha256": "1fde5aa0f0baaee3d6e03c3e9e13b76581a793b0f1124de75ccc405fcb995774"
+  },
+  "conda_explicit_lock": {
+    "path": "work/lab_conda_explicit.lock",
+    "sha256": "ed07021e8c5584886c6a31c639811e0bfaf66143a10dc263ab27797dcfd72679"
+  },
+  "pip_freeze_lock": {
+    "path": "work/lab_pip_freeze.lock",
+    "sha256": "e215575984b1f02914e781348564fa8426adb717154bc91a5d39d8af6ec8cc8b"
+  },
+  "prepared_payload_sha256": "4af16c2bd75bbb3164c13bd90aee68786147885ed7bb61657defe939a337a0e1",
+  "all_target_count": 175,
+  "primary_pair_count": 53,
+  "planned_model_call_count": 228,
+  "global_distinct_prompt_count": 213,
+  "model_loaded": false,
+  "model_outputs_read_or_generated": false,
+  "gpu_run_authorized": true
+}
